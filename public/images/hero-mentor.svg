@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" fill="none">
+  <rect width="640" height="520" rx="28" fill="#122044"/>
+  <circle cx="520" cy="70" r="90" fill="#4F46E5" opacity=".25"/>
+  <circle cx="80" cy="430" r="70" fill="#7C3AED" opacity=".2"/>
+  <rect x="70" y="300" width="220" height="150" rx="16" fill="#1E293B"/>
+  <rect x="90" y="250" width="70" height="90" rx="6" fill="#6366F1"/>
+  <rect x="170" y="230" width="70" height="110" rx="6" fill="#A78BFA"/>
+  <rect x="250" y="260" width="70" height="80" rx="6" fill="#38BDF8"/>
+  <text x="98" y="300" fill="white" font-size="10" font-family="Arial">MATHS</text>
+  <text x="178" y="280" fill="white" font-size="10" font-family="Arial">IIT-JEE</text>
+  <text x="258" y="305" fill="white" font-size="9" font-family="Arial">PHYSICS</text>
+  <circle cx="430" cy="210" r="58" fill="#F8D7B0"/>
+  <rect x="372" y="268" width="116" height="150" rx="20" fill="#1D4ED8"/>
+  <rect x="352" y="300" width="40" height="110" rx="16" fill="#F8D7B0"/>
+  <rect x="468" y="300" width="40" height="110" rx="16" fill="#F8D7B0"/>
+  <path d="M390 185c20-28 60-28 80 0" stroke="#1E293B" stroke-width="10" fill="none"/>
+  <rect x="400" y="228" width="60" height="8" rx="4" fill="#7C3AED"/>
+  <text x="78" y="80" fill="#C7D2FE" font-size="22" font-weight="700" font-family="Arial">ARJUNA CLASSES</text>
+  <text x="78" y="108" fill="#94A3B8" font-size="14" font-family="Arial">Live. Practice. Rank.</text>
+</svg>
