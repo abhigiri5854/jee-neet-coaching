@@ -261,7 +261,7 @@ export default async function HomePage() {
                   />
                   <div>
                     <p className="text-sm font-semibold text-navy">{item.student_name}</p>
-                    <p className="text-xs text-muted-foreground">{item.exam_label}</p>
+                    <p className="text-xs text-muted-foreground">{item.status_label}</p>
                   </div>
                 </footer>
               </blockquote>

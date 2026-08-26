@@ -44,7 +44,7 @@ export default async function TeacherDetailPage({
           </p>
           <p className="mt-6 max-w-2xl text-muted-foreground">{teacher.bio}</p>
           <ul className="mt-6 flex flex-wrap gap-2">
-            {teacher.highlights.map((item) => (
+            {teacher.achievements.map((item) => (
               <li key={item} className="rounded-full bg-lavender px-3 py-1 text-sm text-navy">
                 {item}
               </li>

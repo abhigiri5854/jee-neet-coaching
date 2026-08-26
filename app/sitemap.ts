@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
-import { COURSES, PAPERS, TEACHERS } from "@/lib/catalog";
+import { COURSES, SAMPLE_PAPERS, TEACHERS } from "@/lib/data/catalog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/courses", "/teachers", "/batches", "/about", "/sample-papers"].map(
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE.url}/teachers/${teacher.slug}`,
       lastModified: new Date(),
     })),
-    ...PAPERS.map((paper) => ({
+    ...SAMPLE_PAPERS.map((paper) => ({
       url: `${SITE.url}/sample-papers/${paper.slug}`,
       lastModified: new Date(),
     })),

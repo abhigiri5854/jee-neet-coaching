@@ -49,7 +49,7 @@ export default async function CourseDetailPage({
         ) : null}
         <h2 className="mt-10 text-xl font-semibold text-navy">What you get</h2>
         <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
-          {(course.highlights ?? []).map((item) => (
+          {course.features.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>

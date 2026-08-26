@@ -33,9 +33,9 @@ export default async function BatchesPage() {
             {batches.map((batch) => (
               <tr key={batch.id} className="border-t border-border">
                 <td className="px-4 py-4">
-                  <p className="font-medium text-navy">{batch.name}</p>
+                  <p className="font-medium text-navy">{batch.title}</p>
                   <p className="text-xs text-muted-foreground">
-                    {batch.class_level} · {batch.mode}
+                    {batch.class_level} · {batch.status}
                   </p>
                 </td>
                 <td className="px-4 py-4">{batch.exam}</td>
@@ -48,7 +48,7 @@ export default async function BatchesPage() {
                   })}
                 </td>
                 <td className="px-4 py-4">
-                  {batch.seats_left}/{batch.seats_total}
+                  {batch.seats_available}/{batch.seats_total}
                 </td>
                 <td className="px-4 py-4">
                   <Link
