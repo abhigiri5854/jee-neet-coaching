@@ -1,4 +1,4 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
@@ -29,7 +29,7 @@ export async function GET(
 
   try {
     const bytes = await readFile(localPath);
-    const response = new Response(bytes, {
+    const response = new NextResponse(bytes, {
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": `${download ? "attachment" : "inline"}; filename="${path.basename(filePath)}"`,
@@ -50,7 +50,7 @@ export async function GET(
     if (error || !data?.signedUrl) {
       return new Response("Unable to open this PDF", { status: 404 });
     }
-    const response = Response.redirect(data.signedUrl, 302);
+    const response = NextResponse.redirect(data.signedUrl, 302);
     if (!request.cookies.get("sample-paper-visitor")) response.cookies.set("sample-paper-visitor", visitorKey, { maxAge: 60 * 60 * 24 * 365, httpOnly: true, sameSite: "lax", path: "/" });
     return response;
   }
