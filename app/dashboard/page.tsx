@@ -42,10 +42,16 @@ export default async function DashboardPage() {
         </Link>
       </div>
       {admin ? (
-        <Link href="/admin/counselling" className="mt-4 block rounded-2xl bg-white p-5 ring-1 ring-border">
-          <p className="font-semibold text-navy">Manage counselling requests</p>
-          <p className="mt-1 text-sm text-muted-foreground">Review enquiries and update follow-up status</p>
-        </Link>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <Link href="/admin/counselling" className="rounded-2xl bg-white p-5 ring-1 ring-border">
+            <p className="font-semibold text-navy">Manage counselling requests</p>
+            <p className="mt-1 text-sm text-muted-foreground">Review enquiries and update follow-up status</p>
+          </Link>
+          <Link href="/admin/sample-papers" className="rounded-2xl bg-white p-5 ring-1 ring-border">
+            <p className="font-semibold text-navy">Manage sample papers</p>
+            <p className="mt-1 text-sm text-muted-foreground">Upload PDFs and control publication</p>
+          </Link>
+        </div>
       ) : null}
       <form action={logoutAction} className="mt-8">
         <Button type="submit" variant="outline">

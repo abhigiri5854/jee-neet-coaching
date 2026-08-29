@@ -34,7 +34,7 @@ export default async function PaperDetailPage({
         {paper.difficulty} · {paper.paper_type}
       </p>
       <div className="mt-5">
-        <PaperActions slug={paper.slug} />
+        <PaperActions slug={paper.slug} paperId={paper.id} />
       </div>
       <div className="mt-8 overflow-hidden rounded-2xl ring-1 ring-border">
         <iframe

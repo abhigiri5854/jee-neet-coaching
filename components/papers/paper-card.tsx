@@ -1,15 +1,39 @@
+"use client";
+
 import Link from "next/link";
+import { useState, useTransition } from "react";
+import { BookmarkIcon } from "lucide-react";
+import { toast } from "sonner";
+import { toggleSavedSamplePaper } from "@/lib/actions/sample-papers";
 import type { SamplePaper } from "@/types/database";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export function PaperActions({
   slug,
+  paperId,
   compact = false,
 }: {
   slug: string;
+  paperId?: string;
   compact?: boolean;
 }) {
+  const [saved, setSaved] = useState(false);
+  const [isPending, startTransition] = useTransition();
+
+  function toggleSaved() {
+    if (!paperId) return;
+    startTransition(async () => {
+      try {
+        const result = await toggleSavedSamplePaper(paperId);
+        setSaved(result.saved);
+        toast.success(result.saved ? "Paper saved." : "Paper removed from saved papers.");
+      } catch (error) {
+        toast.error(error instanceof Error ? error.message : "Unable to save this paper.");
+      }
+    });
+  }
+
   return (
     <div className={cn("flex gap-2", compact && "flex-col sm:flex-row")}>
       <a
@@ -26,6 +50,9 @@ export function PaperActions({
       >
         Download
       </a>
+      {paperId ? <button type="button" onClick={toggleSaved} disabled={isPending} className={cn(buttonVariants({ variant: "outline" }), "h-9 px-3")}>
+        <BookmarkIcon className={cn("size-4", saved && "fill-current")} />{saved ? "Saved" : "Save Paper"}
+      </button> : null}
     </div>
   );
 }
@@ -54,7 +81,7 @@ export function PaperCard({ paper }: { paper: SamplePaper }) {
       {paper.description ? (
         <p className="line-clamp-2 text-sm text-muted-foreground">{paper.description}</p>
       ) : null}
-      <PaperActions slug={paper.slug} />
+      <PaperActions slug={paper.slug} paperId={paper.id} />
     </article>
   );
 }

@@ -233,15 +233,12 @@ set search_path = public
 as $$
 begin
   insert into public.profiles (id, full_name, phone, role)
-  values (
+values (
     new.id,
     coalesce(new.raw_user_meta_data->>'full_name', ''),
     coalesce(new.raw_user_meta_data->>'phone', ''),
-    case
-      when coalesce(new.raw_user_meta_data->>'role', '') = 'admin' then 'student'::public.user_role
-      else 'student'::public.user_role
-    end
-  );
+    'student'::public.user_role
+);
   return new;
 end;
 $$;
