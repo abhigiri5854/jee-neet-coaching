@@ -38,14 +38,14 @@ export default async function CourseDetailPage({
         <h1 className="mt-2 text-4xl font-bold text-navy">{course.title}</h1>
         <p className="mt-4 text-muted-foreground">{course.description}</p>
         {teacher ? (
-          <Link href={`/teachers/${teacher.slug}`} className="mt-6 flex items-center gap-3">
+          <div className="mt-6 flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={teacher.photo_path} alt="" className="size-12 rounded-full object-cover" />
             <div>
               <p className="font-medium text-navy">{teacher.name}</p>
               <p className="text-sm text-muted-foreground">{teacher.subject} faculty</p>
             </div>
-          </Link>
+          </div>
         ) : null}
         <h2 className="mt-10 text-xl font-semibold text-navy">What you get</h2>
         <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted-foreground">

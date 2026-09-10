@@ -13,7 +13,7 @@ const papers = [
 ];
 
 function pdfFor(title) {
-  const text = `PrepXpert - ${title}`;
+  const text = `Chemistry by M.K Rana Sir - ${title}`;
   const stream = `BT /F1 16 Tf 50 780 Td (${text.replace(/[()\\]/g, "")}) Tj T* /F1 12 Tf (Official sample paper PDF for viewing and download.) Tj ET`;
   const objects = [
     "1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj",

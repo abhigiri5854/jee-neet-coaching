@@ -97,7 +97,7 @@ export async function notifyCounsellingRequest(
   const emailSent = await sendEmail({
     to: request.email,
     subject: "We received your counselling request",
-    html: `<p>Hi ${safeName},</p><p>We have received your counselling request. Our academic counsellors will contact you shortly.</p><p>Thank you,<br />PrepXpert</p>`,
+    html: `<p>Hi ${safeName},</p><p>We have received your counselling request. Our academic counsellors will contact you shortly.</p><p>Thank you,<br />Chemistry by M.K Rana Sir</p>`,
   });
   return { studentConfirmationSent: emailSent };
 }

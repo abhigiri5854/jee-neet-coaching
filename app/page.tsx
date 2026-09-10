@@ -42,7 +42,7 @@ export default async function HomePage() {
            <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight text-white md:text-6xl lg:text-7xl">
             </h1>
             <p className="mt-5 max-w-lg text-base text-white/75 md:text-lg">
-              Live classes, sample papers, doubt solving and 1:1 mentorship — built for serious
+              Live classes, sample papers, doubt solving and One to One mentorship — built for serious
               rankers.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -62,11 +62,7 @@ export default async function HomePage() {
                 <PlayCircle /> Try Free Demo Class
               </Link>
             </div>
-            <div className="mt-7 grid grid-cols-3 gap-4 text-lg">
-              <div>
-                <p className="text-3xl font-bold">500+</p>
-                <p className="text-base text-white/60">Top Teachers</p>
-              </div>
+            <div className="mt-7 grid grid-cols-2 gap-4 text-lg">
               <div>
                 <p className="text-3xl font-bold">10K+</p>
                 <p className="text-base text-white/60">Students Trust Us</p>
@@ -94,11 +90,10 @@ export default async function HomePage() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2">
           <div>
             <h2 className="text-4xl font-bold text-navy md:text-5xl">
-              Need Personal Guidance? Talk to Our Experts.
+              Facing problems in your JEE or NEET preparation? Talks to our experts. 
             </h2>
             <p className="mt-3 max-w-lg text-lg text-muted-foreground">
-              Share your class and target exam. We will recommend a batch and unlock a free
-              counselling call.
+              Best Self Designed Test series for Revision of your Preparation.
             </p>
             <div className="mt-8 overflow-hidden rounded-3xl bg-lavender">
               <Image
@@ -202,21 +197,21 @@ export default async function HomePage() {
           <div className="rounded-2xl bg-white p-6 ring-1 ring-border">
             <h3 className="mb-4 font-semibold text-navy">How it works</h3>
             <ol className="space-y-4">
-              {["Choose your course", "Attend live classes", "Practice & learn", "Achieve your goal"].map(
-                (step, index) => (
-                  <li key={step} className="flex gap-3">
-                    <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-bold text-white">
-                      {index + 1}
-                    </span>
-                    <div>
-                      <p className="font-medium text-navy">{step}</p>
-                      <p className="text-sm text-muted-foreground">
-                        A guided path from counselling to exam day.
-                      </p>
-                    </div>
-                  </li>
-                )
-              )}
+              {[
+                "Concept Building covering all topics from very basic to Advanced.",
+                "Application of Concept in max Question (through Question Practice session).",
+                "Improve Accuracy Level and speed by strong testification through our self designed test series.",
+                "Achieve your goal.",
+              ].map((step, index) => (
+                <li key={step} className="flex gap-3">
+                  <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-bold text-white">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <p className="font-medium text-navy">{step}</p>
+                  </div>
+                </li>
+              ))}
             </ol>
           </div>
           <div className="rounded-2xl bg-lavender p-6">

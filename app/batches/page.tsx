@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Batches",
-  description: "Upcoming and ongoing PrepXpert batches for JEE and NEET.",
+  description: "Upcoming and ongoing Chemistry by M.K Rana Sir batches for JEE and NEET.",
 };
 
 export default async function BatchesPage() {

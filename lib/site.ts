@@ -1,8 +1,8 @@
 export const SITE = {
-  name: "PrepXpert",
+  name: "Chemistry by Mohit Rana Sir",
   tagline: "Learn. Practice. Excel.",
   description:
-    "PrepXpert is a premium online JEE & NEET coaching platform with live classes, sample papers, doubt solving and one-to-one mentorship.",
+    "PrepXpert is a premium Personalized coaching for JEE and NEET platform with live classes, sample papers, doubt solving and one-to-one mentorship.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
 } as const;
 
@@ -10,7 +10,6 @@ export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/courses", label: "Courses" },
   { href: "/sample-papers", label: "Sample Papers" },
-  { href: "/teachers", label: "Teachers" },
   { href: "/batches", label: "Batch" },
   { href: "/about", label: "About Us" },
 ] as const;
@@ -38,7 +37,6 @@ export const CLASS_TARGETS = [
 ] as const;
 
 export const STATS = [
-  { value: "500+", label: "Expert Teachers" },
   { value: "10,000+", label: "Happy Students" },
   { value: "50,000+", label: "Classes Conducted" },
   { value: "95%", label: "Success Rate" },
@@ -47,7 +45,7 @@ export const STATS = [
 export const FEATURES = [
   {
     title: "Live Classes",
-    description: "Interactive live classes with top faculty",
+    description: "Small batches of 5-10 only",
     icon: "video",
   },
   {
@@ -62,17 +60,17 @@ export const FEATURES = [
   },
   {
     title: "Doubt Solving",
-    description: "Instant doubt resolution",
+    description: "Personalized guidance and doubt solving",
     icon: "message",
   },
   {
     title: "Student Interaction",
-    description: "Connect with peers and learn together",
+    description: "Strong concept building + Advanced doubt solving ",
     icon: "users",
   },
   {
     title: "Online Batches",
-    description: "Regular & crash courses for JEE & NEET",
+    description: "Regular test analysis and performance tracking",
     icon: "school",
   },
 ] as const;

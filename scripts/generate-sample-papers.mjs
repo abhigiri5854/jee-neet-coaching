@@ -19,10 +19,10 @@ async function makePdf(slug, title, subject) {
   const body = await doc.embedFont(StandardFonts.Helvetica);
   const page = doc.addPage([595, 842]);
   page.drawRectangle({ x: 0, y: 760, width: 595, height: 82, color: rgb(0.04, 0.11, 0.23) });
-  page.drawText("PrepXpert Sample Paper", { x: 48, y: 800, size: 12, font: body, color: rgb(0.78, 0.82, 0.95) });
+  page.drawText("Chemistry by M.K Rana Sir Sample Paper", { x: 48, y: 800, size: 12, font: body, color: rgb(0.78, 0.82, 0.95) });
   page.drawText(title, { x: 48, y: 772, size: 18, font, color: rgb(1, 1, 1) });
   page.drawText(subject, { x: 48, y: 720, size: 12, font: body, color: rgb(0.2, 0.2, 0.3) });
-  page.drawText("This is an official PrepXpert practice PDF.", { x: 48, y: 690, size: 11, font: body, color: rgb(0.25, 0.25, 0.35) });
+  page.drawText("This is an official Chemistry by M.K Rana Sir practice PDF.", { x: 48, y: 690, size: 11, font: body, color: rgb(0.25, 0.25, 0.35) });
   for (let i = 1; i <= 12; i += 1) {
     page.drawText(`${i}. Practice question for ${title}. Choose the correct option.`, {
       x: 48,

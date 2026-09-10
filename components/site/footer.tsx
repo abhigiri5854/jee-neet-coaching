@@ -31,8 +31,8 @@ export function SiteFooter() {
               </a>
             </li>
             <li>
-              <a href="tel:+919876543210" className="hover:text-white">
-                +91 98765 43210
+              <a href="tel:+91 85860 93402" className="hover:text-white">
+                +91 85860 93402
               </a>
             </li>
             <li>Counselling: 10:00 AM – 8:00 PM IST</li>

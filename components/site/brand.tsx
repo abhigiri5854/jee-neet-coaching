@@ -10,7 +10,7 @@ export function Brand({ light = false }: { light?: boolean }) {
         </svg>
       </span>
       <span
-        className={`text-lg font-bold tracking-tight ${light ? "text-white" : "text-navy"}`}
+        className={`text-base sm:text-lg font-bold tracking-tight ${light ? "text-white" : "text-navy"}`}
       >
         {SITE.name}
       </span>
