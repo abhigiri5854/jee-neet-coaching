@@ -26,8 +26,8 @@ export function SiteFooter() {
           <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-white">Support</h3>
           <ul className="space-y-2 text-sm text-white/75">
             <li>
-              <a href="mailto:support@prepxpert.in" className="hover:text-white">
-                support@prepxpert.in
+              <a href="mailto:chemistryexpert20@gmail.com" className="hover:text-white">
+                chemistryexpert20@gmail.com
               </a>
             </li>
             <li>

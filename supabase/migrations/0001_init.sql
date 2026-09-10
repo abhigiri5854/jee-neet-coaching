@@ -191,8 +191,8 @@ create table public.view_logs (
 create table public.site_settings (
   id text primary key default 'default',
   counselling_hours text default '10:00 AM – 8:00 PM IST',
-  support_email text default 'support@prepxpert.in',
-  support_phone text default '+91 98765 43210',
+  support_email text default 'chemistryexpert20@gmail.com',
+  support_phone text default '+91 85860 93402',
   updated_at timestamptz not null default now()
 );
 
