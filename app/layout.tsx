@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { SiteHeader } from "@/components/site/header";
+import { AnnouncementTicker } from "@/components/site/announcement-ticker";
 import { SiteFooter } from "@/components/site/footer";
 import { Toaster } from "@/components/ui/sonner";
 import { createClient } from "@/lib/supabase/server";
@@ -60,6 +61,7 @@ export default async function RootLayout({
     <html lang="en" className={`${jakarta.variable} h-full`}>
       <body className={`${jakarta.className} flex min-h-full flex-col antialiased`}>
         <SiteHeader userName={userName} />
+        <AnnouncementTicker />
         <main className="flex-1">{children}</main>
         <SiteFooter />
         <Toaster />

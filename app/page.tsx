@@ -37,7 +37,7 @@ export default async function HomePage() {
         <div className="relative mx-auto grid max-w-6xl items-center gap-8 px-4 py-10 lg:grid-cols-2 lg:py-12">
           <div>
             <p className="mb-4 inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-indigo-200">
-              Online JEE & NEET coaching
+              Personalised One-to-One JEE NEET coaching
             </p>
            <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight text-white md:text-6xl lg:text-7xl">
             </h1>
@@ -62,10 +62,14 @@ export default async function HomePage() {
                 <PlayCircle /> Try Free Demo Class
               </Link>
             </div>
-            <div className="mt-7 grid grid-cols-2 gap-4 text-lg">
+            <div className="mt-7 grid grid-cols-3 gap-4 text-lg">
               <div>
                 <p className="text-3xl font-bold">10K+</p>
                 <p className="text-base text-white/60">Students Trust Us</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold">18+</p>
+                <p className="text-base text-white/60">Years Experience</p>
               </div>
               <div>
                 <p className="text-3xl font-bold">95%</p>
@@ -75,8 +79,8 @@ export default async function HomePage() {
           </div>
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-white/5 ring-1 ring-white/10">
             <Image
-              src="/images/hero-image.png"
-              alt="Students preparing for JEE and NEET exams"
+               src="/images/mohit-rana-standing.png"
+               alt="Mohit Rana Sir - JEE and NEET Chemistry expert"
               fill
               priority
               sizes="(max-width: 1023px) 100vw, 50vw"
